@@ -1,15 +1,48 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 .App {
   text-align: center;
+  width: 100%;
 }
 
 img {
-  width: 100%
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
-.container {
-  display: flex;
+.row {
+display: flex;
+justify-content: center;
 }
 
-.item {
+.country {
   flex: 1;
+  border: 1px solid rgb(255, 192, 213);
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  transition: bottom ease .25s;
+  position: absolute;
+  bottom: -100px;
+  background-color: rgb(255, 192, 213);
+  opacity: .9;
+  width: 100%;
+  color: white;
+}
+
+.country:hover .overlay {
+  opacity: .9;
+  bottom: 0;
+}
+
+@media only screen and (max-width: 600px) {
+ .container {
+     flex-direction: column;
+    }
 }
