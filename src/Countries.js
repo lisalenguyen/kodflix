@@ -14,8 +14,6 @@ export default function Countries() {
     <Country id='australia'name='Australia' src= {australia} />
     <Country id='austria' name='Austria' src={austria} />
     <Country id='france' name='France' src={france} />
-    </section>
-  <section className='row'>
     <Country id='indonesia' name='Indonesia' src={indonesia} />
     <Country id='monaco' name='Monaco' src={monaco} />
     <Country id='romania' name='Romania' src={romania} />

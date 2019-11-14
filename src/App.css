@@ -15,12 +15,16 @@ img {
 }
 
 .row {
-display: flex;
+/* display: flex;
+flex-wrap: wrap; */
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 justify-content: center;
 }
 
 .country {
-  flex: 1;
+  /* flex: 1;
+  flex-basis: 120px; */
   border: 1px solid rgb(255, 192, 213);
   position: relative;
   overflow: hidden;
@@ -41,8 +45,8 @@ justify-content: center;
   bottom: 0;
 }
 
-@media only screen and (max-width: 600px) {
- .container {
+/* @media only screen and (max-width: 600px) {
+ .row {
      flex-direction: column;
     }
-}
+} */
