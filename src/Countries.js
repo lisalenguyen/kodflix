@@ -11,14 +11,14 @@ export default function Countries() {
   return (
   <div>
   <section className='row'>
-    <Country name='Australia' src= {australia} />
-    <Country name='Austria' src={austria} />
-    <Country name='France' src={france} />
+    <Country name='Australia' src= {australia} id='australia' />
+    <Country name='Austria' src={austria} id='austria'/>
+    <Country name='France' src={france} id='france'/>
     </section>
   <section className='row'>
-    <Country name='Indonesia' src={indonesia} />
-    <Country name='Monaco' src={monaco} />
-    <Country name='Romania' src={romania} />
+    <Country name='Indonesia' src={indonesia} id='indonesia'/>
+    <Country name='Monaco' src={monaco} id='monaco'/>
+    <Country name='Romania' src={romania} id='romania'/>
   </section>
   </div>
   )
